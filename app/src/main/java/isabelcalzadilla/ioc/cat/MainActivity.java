@@ -6,7 +6,8 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static  final String PRIMERA_PANTALLA = "Primera Pantalla";
+    // variables para la impresión de los valores deseados en el LOG
+    private static  final String PrimeraPantalla = "Primera Pantalla";
     private static  final String message = "Soc Isabel Calzadilla i escriu desde el log";
 
     /*
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i(PRIMERA_PANTALLA, message);
+
+        // llamado a la impresión del tag y mensaje en el Log con la 'i' indicativo del nivel de 'Info'
+        Log.i(PrimeraPantalla, message);
     }
 }
